@@ -27,7 +27,7 @@ python_pip "superlance" do
 end
 
 supervisor_service node[:pyramid][:domain] do
-  action :restart
+  action :enable
   autorestart true
   command "#{node.pyramid.appdir}/bin/pserve #{node.pyramid.appdir}/production.ini"
   user node[:pyramid][:user]
