@@ -3,6 +3,8 @@
 # Recipe:: default
 #
 
+package 'make'
+
 include_recipe 'apt'
 include_recipe 'build-essential'
 
