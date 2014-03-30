@@ -23,7 +23,6 @@ Example Vagrantfile for chef solo provided for launching a Pyramid application.
 - `default[:pyramid][:domain]` - domain for nginx configuration. default is `pyramid.example.com`
 - `default[:pyramid][:port]` - port for pyramid web server. default is `6543`
 - `default[:pyramid][:appdir]` - location to host pyramid website code. default is `/home/pyramid/pyramid.example.com`
-- `default[:pyramid][:repo]` - repo to deploy and pull code from. default is nil
 - `default[:pyramid][:node_version]` - nodejs version to install into repo. default is `1.10.26`
 
 ## Recipes
