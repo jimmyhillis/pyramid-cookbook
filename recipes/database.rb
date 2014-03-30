@@ -21,7 +21,7 @@ mysql_database node[:pyramid][:database][:database] do
   action      :create
 end
 
-mysql_database_user node[:pyramid][:database][:user] do
+mysql_database_user node[:pyramid][:database][:username] do
   connection      mysql_connection_info
   password        node[:pyramid][:database][:password]
   host            node[:pyramid][:database][:host]
@@ -29,7 +29,7 @@ mysql_database_user node[:pyramid][:database][:user] do
   action          :create
 end
 
-mysql_database_user node[:pyramid][:database][:user] do
+mysql_database_user node[:pyramid][:database][:username] do
   connection      mysql_connection_info
   database_name   node[:pyramid][:database][:database]
   privileges      [:all]
